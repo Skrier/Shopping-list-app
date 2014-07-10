@@ -13,11 +13,11 @@ $(document).ready(function (){
         $('#list6').mousedown( function() {
            checkitem();
 
-        })
+        });
         $('#list1').mousedown( function() {
            deleteitem();
 
-        })
+        });
 });
 
 
@@ -27,10 +27,10 @@ var name = $('#Product').val();
 var quant = +$('#Quant').val();
 var price = +$('#Price').val();
 var total = price*quant;
-var listitem = $('<div id="list0">'+'<div id="list1">'+$('#list1') +'</div>'
+var listitem = $('<div id="list0">'+'<div id="list1">'+'</div>'
 	+'<div id="list2">'+name+'</div>'+'<div id="list3">'+quant+
 	'</div>'+'<div id="list4">'+'£'+price+'</div>'+'<div id="list5">'+'£'+total+'</div>'
-     +'<div id="list6">'+$('#list6')+'</div>'+'</div>');
+     +'<div id="list6">'+'</div>'+'</div>');
 $("#list0").append(listitem).animate({'bottom': '10px'},'slow');
 
 }
